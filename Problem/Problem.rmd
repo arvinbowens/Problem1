@@ -17,3 +17,13 @@ Ourdata <- read.csv(file="GSScsv.csv")
 
 $H_O$ : There is no difference in average years of education between those who voted   and those who didnt vote.  
 $H_A$ :There is a difference in average years of education between those and did not.  
+ 
+## graffical summary 
+
+
+## Box plot
+```{r}
+plot(EDUC~VOTE12, data=Ourdata)
+```
+ 
+ It appars that the average years of education is about or same  for both groups.
