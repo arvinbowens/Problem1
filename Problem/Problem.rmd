@@ -28,12 +28,21 @@ plot(EDUC~VOTE12, data=Ourdata)
  
  It appars that the average years of education is about or same  for both groups.
  
-  ## numerical summary
+## Numerical summary
 
 ```{r}
 favstats(EDUC~VOTE12,data=Ourdata)
 ```
+
+## Inference test
+
+
+```{r}
+t.test(EDUC~VOTE12, data=Ourdata)
 ```
+
+## conclusion
+The p-value from the t-test is 0.005, this less than 0.05, so we   reject the null hypothesis and conclude we have evidence that   there is a difference between the average years of education of   those who voted in 2012 and those who didnt vote.  
 
   
  
